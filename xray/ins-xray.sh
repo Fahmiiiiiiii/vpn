@@ -109,7 +109,7 @@ if [ -f "/etc/xray/domain" ]; then
   echo -e "[ ${green}INFO$NC ] Current domain for acme : $domain"
 else
   echo -e "[ ${green}INFO$NC ] Getting acme for cert"
-  curl https://get.acme.sh | sh -s email=my@example.com
+  curl https://get.acme.sh | sh -s email=formlbbacc07@gmail.com
   /root/.acme.sh/acme.sh --issue -d $domain --debug --standalone --keylength ec-256
 #/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 fi
@@ -852,7 +852,7 @@ EOF
 
 sleep 1
 echo -e "[ ${green}INFO$NC ] Installing bbr.."
-wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/vlastech2022vpn/vpn/main/dll/bbr.sh"
+wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/Fahmiiiiiiii/vpn/main/dll/bbr.sh"
 chmod +x /usr/bin/bbr
 bbr >/dev/null 2>&1
 rm /usr/bin/bbr >/dev/null 2>&1
