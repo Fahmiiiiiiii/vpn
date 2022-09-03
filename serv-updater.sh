@@ -87,7 +87,7 @@ NameUser=$(curl -sS https://raw.githubusercontent.com/Fahmiiiiiiii/access/main/i
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
 clear
 
-serverV=$( curl -sS https://raw.githubusercontent.com/scvps/perizinan/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/Fahmiiiiiiii/access/main/versi  )
 if [[  $(cat /opt/.ver) = $serverV ]]; then
 echo "You Have The Latest Version"
 exit 0
